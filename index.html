@@ -1,0 +1,647 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Slow Down: wellness-ретрит в Хойане, 21–22 ноября</title>
+<meta name="description" content="Два дня на вилле у реки: йога, Sound Healing, бассейн и люди, с которыми хочется говорить обо всём. Количество мест ограничено.">
+<meta property="og:title" content="Slow Down: wellness-ретрит в Хойане, 21–22 ноября">
+<meta property="og:description" content="Два дня на вилле у реки: йога, Sound Healing, бассейн и люди, с которыми хочется говорить обо всём. Количество мест ограничено.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Great+Vibes&family=Open+Sans:ital,wght@0,300..700;1,300..600&family=Oranienbaum&display=swap&subset=cyrillic" rel="stylesheet">
+<style>
+:root {
+  --cream: #fcf3dd;
+  --sand: #efe4c9;
+  --line: #b9ad92;
+  --ink: #3a3323;
+  --soft: #6a604b;
+  --olive: #3d3c28;
+  --gutter: clamp(16px, 5vw, 72px);
+  --display: "Oranienbaum", "Times New Roman", serif;
+  --swash: "Great Vibes", cursive;
+  --text: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+}
+* { box-sizing: border-box; margin: 0; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body { background: var(--cream); color: var(--ink); font: 400 16px/1.6 var(--text); overflow-x: hidden; }
+ul { list-style: none; padding: 0; }
+a { color: inherit; }
+:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
+
+/* Заголовки с росчерком: как в примере, отдельные буквы написаны от руки */
+.big {
+  font: 400 clamp(46px, 8.6vw, 124px)/.98 var(--display);
+  text-transform: uppercase;
+  letter-spacing: -.025em;
+  text-align: center;
+  text-wrap: balance;
+}
+.sw {
+  font-family: var(--swash);
+  font-size: 1.32em;
+  line-height: 0;
+  text-transform: none;
+  letter-spacing: 0;
+  margin-inline: -.07em .01em;
+}
+.lead {
+  font-size: clamp(28px, 3.7vw, 50px);
+  line-height: 1.14;
+  font-weight: 500;
+  letter-spacing: -.025em;
+}
+.lead em { font-weight: 300; }
+.caps {
+  font-size: 12.5px;
+  line-height: 1.5;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+/* Кнопка */
+.btn {
+  position: relative;
+  isolation: isolate;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 15px 26px;
+  border-radius: 14px;
+  background: var(--ink);
+  color: var(--ink);
+  font: 600 12.5px/1.2 var(--text);
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: color .2s;
+}
+.btn::before {
+  content: "";
+  position: absolute;
+  inset: 1.5px;
+  z-index: -1;
+  background: var(--cream);
+  border-radius: 12.5px;
+  transition: background .2s;
+}
+.btn i { width: 26px; height: 1px; background: currentColor; position: relative; }
+.btn i::after {
+  content: "";
+  position: absolute;
+  right: 0; top: -3px;
+  width: 7px; height: 7px;
+  border-top: 1px solid;
+  border-right: 1px solid;
+  transform: rotate(45deg);
+}
+.btn:hover { color: var(--cream); }
+.btn:hover::before { background: var(--ink); }
+.btn--light { background: none; color: var(--ink); }
+.btn--light::before { inset: 0; border-radius: 14px; background: var(--cream); }
+.btn--light:hover { color: var(--ink); }
+.btn--light:hover::before { background: var(--sand); }
+.btn--ghost { background: var(--cream); color: var(--cream); }
+.btn--ghost::before { background: var(--olive); }
+.btn--ghost:hover { color: var(--olive); }
+.btn--ghost:hover::before { background: var(--cream); }
+
+/* Пустые поля для фото */
+.ph {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  padding: 14px 16px;
+  background: var(--sand);
+  color: var(--soft);
+  font-size: 13px;
+  line-height: 1.35;
+}
+.ph--mark::before, .ph--mark::after {
+  content: "";
+  position: absolute;
+  width: 26px; height: 26px;
+  background: var(--ink);
+}
+.ph--mark::before { top: 0; left: 0; clip-path: polygon(0 0, 100% 0, 100% 3px, 3px 3px, 3px 100%, 0 100%); }
+.ph--mark::after { top: 0; right: 0; clip-path: polygon(0 0, 100% 0, 100% 100%, calc(100% - 3px) 100%, calc(100% - 3px) 3px, 0 3px); }
+.ph img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.ph--mark::before, .ph--mark::after { z-index: 1; }
+.todo { background: #f2d9a4; padding: 0 .25em; }
+
+.wrap { padding-inline: var(--gutter); max-width: 1320px; margin-inline: auto; }
+.sec { padding-block: clamp(72px, 10vw, 150px); }
+.sub { max-width: 34em; margin: 26px auto 0; text-align: center; color: var(--soft); text-wrap: pretty; }
+
+/* Обложка */
+.hero {
+  position: relative;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 92px var(--gutter) 64px;
+  background:
+    linear-gradient(rgb(30 27 16 / .7), rgb(30 27 16 / .7)),
+    var(--olive) url("images/hero-jungle.jpg") center 62% / cover no-repeat;
+  color: var(--cream);
+  text-align: center;
+}
+.brand { position: absolute; top: 24px; left: 0; right: 0; font: 400 34px/1 var(--swash); }
+.hero .big { max-width: 12em; margin-top: 26px; font-size: clamp(44px, 7.4vw, 112px); }
+.hero__sub { max-width: 36em; margin-top: 30px; text-wrap: pretty; }
+.chips { display: flex; flex-wrap: wrap; justify-content: center; margin: 30px 0 34px; border-block: 1px solid rgb(252 243 221 / .35); }
+.chips li { padding: 10px 20px; font-size: 14px; }
+.chips li + li { border-left: 1px solid rgb(252 243 221 / .35); }
+.hero__note { max-width: 31em; margin-top: 20px; font-size: 13.5px; opacity: .85; text-wrap: balance; }
+
+/* Узнаёшь себя */
+.ovals { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px clamp(16px, 2.4vw, 32px); margin-top: 28px; }
+.ovals > li { container-type: inline-size; display: flex; }
+.oval {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 24cqw;
+  padding: 70cqw 15cqw 27cqw;
+  border: 1px solid var(--ink);
+  border-radius: 50cqw;
+  text-align: center;
+  text-wrap: pretty;
+}
+.oval::before {
+  content: "";
+  position: absolute;
+  left: 8cqw;
+  top: -24cqw;
+  width: 84cqw;
+  aspect-ratio: 1;
+  border: 1px solid var(--ink);
+  border-radius: 50%;
+  pointer-events: none;
+}
+.oval h3 {
+  position: absolute;
+  left: 15cqw; right: 15cqw;
+  top: 13cqw;
+  height: 42cqw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: 500 clamp(15px, 5.2cqw, 19px)/1.2 var(--text);
+  letter-spacing: .03em;
+  text-transform: uppercase;
+  text-wrap: balance;
+}
+.oval p, .oval__list { font-size: 15px; line-height: 1.45; }
+.oval__list { list-style: none; padding: 0; }
+.oval__list li + li {
+  margin-top: .5em;
+  padding-top: 1.15em;
+  background: radial-gradient(circle, var(--ink) 2.5px, transparent 3px) center top / 8px 8px no-repeat;
+}
+.oval__list--steps { counter-reset: s; }
+.oval__list--steps li { counter-increment: s; }
+.oval__list--steps li::before { content: counter(s); display: block; font: 400 22px/1.2 var(--display); }
+.ovals--terms { margin-top: 44px; align-items: start; }
+.sum { max-width: 21em; margin: clamp(56px, 7vw, 100px) auto 0; text-align: center; }
+.sum-note { max-width: 33em; margin: 0 auto 22px; text-align: center; }
+
+/* Что вас ждёт */
+.collage { display: grid; grid-template-columns: 5fr 2fr 2fr; gap: 10px; margin-top: 52px; }
+.collage .ph:first-child { grid-row: span 2; aspect-ratio: 5 / 3.5; }
+.cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 56px clamp(20px, 3vw, 44px); margin-top: clamp(56px, 7vw, 100px); }
+.card .ph { aspect-ratio: 4 / 3; margin-bottom: 20px; border-radius: 22px; overflow: hidden; }
+.card .ph::before, .card .ph::after { display: none; }
+.card h3 { font: 400 28px/1.12 var(--display); margin-bottom: 10px; }
+
+/* Чего здесь не будет */
+.dark { background: var(--olive); color: var(--cream); }
+.nope { display: grid; grid-template-columns: 1fr 1fr; gap: 0 clamp(32px, 6vw, 96px); margin-top: 60px; }
+.nope li { padding-block: 26px; border-top: 1px solid rgb(252 243 221 / .35); }
+.nope h3 { font: 400 28px/1.15 var(--display); margin-bottom: 8px; }
+.dark .sum { font-weight: 300; }
+
+/* Программа */
+.days { display: grid; grid-template-columns: 1fr 1fr; margin-top: 64px; border-top: 1px solid var(--ink); }
+.day { padding: 36px clamp(20px, 4vw, 64px) 8px; }
+.day + .day { border-left: 1px solid var(--ink); }
+.day h3 { font: 400 clamp(30px, 3.2vw, 42px)/1.1 var(--display); margin-bottom: 24px; }
+.day li { display: grid; grid-template-columns: 7.2em 1fr; gap: 16px; padding-block: 13px; border-top: 1px solid var(--line); }
+.day b { font-weight: 600; font-variant-numeric: tabular-nums; }
+
+/* Вилла: лента фото с соседними кадрами по краям */
+.villa { padding-bottom: 0; }
+.rail-box { position: relative; margin-top: 60px; }
+.rail { display: flex; gap: 22px; overflow-x: auto; scroll-snap-type: x mandatory; padding-inline: 18vw; scrollbar-width: none; }
+.rail::-webkit-scrollbar { display: none; }
+.rail .ph { flex: 0 0 64vw; aspect-ratio: 16 / 9; scroll-snap-align: center; border-radius: 22px; overflow: hidden; }
+.round {
+  position: absolute;
+  top: 50%;
+  width: 68px; height: 68px;
+  transform: translateY(-50%);
+  border: 0;
+  border-radius: 50%;
+  background: var(--ink);
+  color: var(--cream);
+  font: 400 22px/1 var(--text);
+  cursor: pointer;
+}
+.round:hover { background: var(--olive); }
+.round--prev { left: calc(18vw - 34px - 11px); }
+.round--next { right: calc(18vw - 34px - 11px); }
+.bar { display: flex; align-items: center; gap: 14px; justify-content: center; margin-top: 22px; font-size: 13px; }
+.bar span { display: block; width: 120px; height: 1px; background: var(--line); position: relative; }
+.bar span i { position: absolute; left: 0; top: -1px; height: 3px; width: 25%; background: var(--ink); transition: left .25s; }
+.two { display: grid; grid-template-columns: 5fr 7fr; gap: clamp(32px, 6vw, 96px); padding-block: clamp(56px, 7vw, 100px); }
+.two h3 { font: 400 clamp(38px, 4.4vw, 62px)/1.05 var(--display); margin-bottom: 18px; }
+.ticks li { padding: 13px 0; border-top: 1px solid var(--line); text-wrap: pretty; }
+.way { margin-top: 24px; color: var(--soft); }
+.food { border-top: 1px solid var(--ink); }
+.food .ph { aspect-ratio: 5 / 4; border-radius: 22px; overflow: hidden; }
+
+/* Кто мы */
+.hello {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.55fr) minmax(0, 1fr);
+  gap: clamp(28px, 4vw, 64px);
+  align-items: start;
+  padding-block: clamp(32px, 4vw, 64px) clamp(64px, 8vw, 110px);
+}
+.hello__photo { aspect-ratio: 3 / 4; overflow: hidden; }
+.hello__photo::after {
+  content: "";
+  position: absolute;
+  inset: 45% 0 0;
+  background: linear-gradient(transparent, rgb(30 27 16 / .78));
+}
+.hello__photo--left { border-radius: 0 22px 22px 0; }
+.hello__photo--right { border-radius: 22px 0 0 22px; margin-top: clamp(80px, 14vw, 220px); }
+.hand {
+  position: absolute;
+  left: 8%; right: 8%;
+  bottom: 7%;
+  z-index: 1;
+  color: var(--cream);
+  font: 400 clamp(21px, 2.3vw, 32px)/1.22 "Bad Script", cursive;
+  transform: rotate(-4deg);
+  text-wrap: balance;
+}
+.hello__text { text-align: center; text-wrap: pretty; }
+.hello__text p { max-width: 34em; margin: 1.1em auto 0; }
+.hello__next {
+  grid-column: 1 / -1;
+  padding-inline: var(--gutter);
+  margin-top: clamp(16px, 3vw, 44px);
+  font: 400 clamp(26px, 3.3vw, 48px)/1.2 var(--display);
+  text-align: center;
+  text-wrap: balance;
+}
+.hello__title {
+  font: 400 clamp(46px, 5.8vw, 88px)/1 var(--display);
+  letter-spacing: -.02em;
+  text-transform: uppercase;
+  color: var(--olive);
+  text-wrap: balance;
+  margin-bottom: 30px;
+}
+.reviews { display: grid; grid-template-columns: 1.333fr .75fr .75fr; gap: 16px; border-top: 1px solid var(--line); padding-top: 28px; }
+.reviews .ph { aspect-ratio: 3 / 4; border-radius: 22px; overflow: hidden; }
+.reviews .ph:first-child { aspect-ratio: 4 / 3; }
+
+/* Стоимость */
+.prices { display: grid; grid-template-columns: 1fr 1fr; margin-top: 60px; border-block: 1px solid var(--ink); }
+.price { padding: 34px clamp(20px, 4vw, 64px) 38px; text-align: center; }
+.price + .price { border-left: 1px solid var(--ink); }
+.price strong { display: block; margin-top: 10px; font: 400 clamp(38px, 5.4vw, 74px)/1.05 var(--display); white-space: nowrap; }
+.center { text-align: center; margin-top: 60px; }
+
+/* Вопросы */
+.faq { max-width: 860px; margin: 60px auto 0; border-bottom: 1px solid var(--ink); }
+.faq details { border-top: 1px solid var(--ink); }
+.faq summary { display: flex; justify-content: space-between; gap: 24px; padding: 20px 0; cursor: pointer; list-style: none; font: 400 clamp(21px, 2.3vw, 27px)/1.2 var(--display); }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: "+"; font: 300 26px/1 var(--text); flex: none; }
+.faq details[open] summary::after { content: "–"; }
+.faq p { padding: 0 44px 24px 0; max-width: 40em; text-wrap: pretty; }
+
+/* Финал */
+.final { text-align: center; }
+.final p { max-width: 36em; margin: 34px auto 40px; text-wrap: pretty; }
+.final__btns { display: flex; flex-wrap: wrap; gap: 16px; justify-content: center; }
+.contacts { max-width: 560px; margin: 60px auto 0; padding-top: 34px; border-top: 1px solid rgb(252 243 221 / .35); font-size: 16px; }
+.contacts h3 { font: 400 clamp(28px, 3vw, 38px)/1.1 var(--display); margin-bottom: 24px; }
+.contacts__cols { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.contacts__cols ul + ul { border-left: 1px solid rgb(252 243 221 / .35); }
+.contacts__cols li { padding: 7px 10px; }
+.contacts a { text-underline-offset: 4px; }
+.contacts a:hover { text-decoration-thickness: 2px; }
+.contacts__insta { display: inline-block; margin-top: 24px; }
+.contacts .todo { color: var(--ink); }
+
+@media (max-width: 860px) {
+  .ovals, .nope, .days, .two, .prices, .cards { grid-template-columns: 1fr; }
+  .day + .day, .price + .price { border-left: 0; }
+  .day + .day { border-top: 1px solid var(--ink); margin-top: 28px; }
+  .price + .price { border-top: 1px solid var(--ink); }
+  .day, .price { padding-inline: 0; }
+  .chips { flex-direction: column; border-block: 0; }
+  .chips li { padding: 3px 0; }
+  .chips li + li { border-left: 0; }
+  .collage { grid-template-columns: 1fr 1fr; }
+  .collage .ph:first-child { grid-column: span 2; grid-row: auto; }
+  .collage .ph:not(:first-child) { aspect-ratio: 1; }
+  .rail { padding-inline: 8vw; gap: 10px; }
+  .rail .ph { flex-basis: 84vw; aspect-ratio: 4 / 3; }
+  .round { width: 48px; height: 48px; font-size: 17px; }
+  .round--prev { left: 8px; }
+  .round--next { right: 8px; }
+  .hero { padding-bottom: 76px; }
+  .hello { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px 12px; padding-inline: 16px; }
+  .hello__text { grid-column: span 2; order: -1; }
+  .hello__next { padding-inline: 0; }
+  .hello__photo--left, .hello__photo--right { border-radius: 22px; margin-top: 0; }
+  .hand { font-size: 17px; }
+  .reviews { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  .reviews .ph:first-child { grid-column: span 2; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .btn, .btn::before, .bar span i { transition: none; }
+}
+</style>
+</head>
+<body>
+
+<!-- Блок 1. Обложка -->
+<header class="hero">
+  <div class="brand">Slow Down</div>
+  <p class="caps">Wellness-ретрит · 21–22 ноября · Хойан</p>
+  <h1 class="big"><span class="sw">W</span>ellness-ретрит на вилле <span class="sw">в</span> Хойане</h1>
+  <p class="hero__sub">Настоящее восстановление вместо очередного выходного с ноутбуком. 2 дня, чтобы выдохнуть, замедлиться и побыть в компании людей, с которыми есть о чём поговорить. Йога, Sound Healing и вилла у реки с бассейном.</p>
+  <ul class="chips">
+    <li>21–22 ноября</li>
+    <li>Вилла у реки, Хойан</li>
+    <li>2 дня / 1 ночь</li>
+    <li>Осталось 6 мест</li>
+  </ul>
+  <a class="btn btn--light" href="https://wa.me/79143753500?text=%D0%A5%D0%BE%D1%87%D1%83%20%D0%BD%D0%B0%20%D1%80%D0%B5%D1%82%D1%80%D0%B8%D1%82%F0%9F%A4%8D%F0%9F%90%9A%F0%9F%A7%89" target="_blank" rel="noopener">Хочу присоединиться <i></i></a>
+  <p class="hero__note">Количество мест специально ограничено. У нас небольшая группа, поэтому мы знакомимся с каждым(ой) лично</p>
+</header>
+
+<main>
+
+<!-- Блок 2. Узнаёшь себя? -->
+<section class="sec wrap">
+  <h2 class="big"><span class="sw">З</span>накомо?</h2>
+  <ul class="ovals">
+    <li><div class="oval"><h3>Вы живёте там,</h3><p>где многие мечтают оказаться. А выходные проходят за ноутбуком, в делах и с ощущением, что вы опять не отдохнули.</p></div></li>
+    <li><div class="oval"><h3>Вы давно не могли</h3><p>просто ничего не делать: без чувства вины и без телефона в руке.</p></div></li>
+    <li><div class="oval"><h3>Вы уехали из дома</h3><p>и вместе с ним оставили свой круг. Старые друзья далеко, а новые знакомые — это пара встреч до следующего переезда.</p></div></li>
+    <li><div class="oval"><h3>Вам хочется живого общения</h3><p>с людьми, которым не нужно объяснять, почему вы здесь и чем занимаетесь. Но на мероприятия вы ходите неохотно: вдруг придёте, а там разговоры ни о чём, никому ничего не интересно, и домой вернётесь более одиноким(ой), чем пришли.</p></div></li>
+    <li><div class="oval"><h3>Вы из тех,</h3><p>кто сам строит свою жизнь: работает, учится, запускает проекты, переехал(а) в другую страну. Но найти людей на своей волне оказалось сложнее, чем найти жильё или визу.</p></div></li>
+    <li><div class="oval"><h3>Поэтому мы собрали 2 дня,</h3><p>чтобы это изменить: красивейшая вилла у реки, мягкие практики, свободное время и группа людей, с которыми есть о чём поговорить.</p></div></li>
+  </ul>
+  <p class="lead sum">И вилла — это прекрасно. Но <em>главное на этом ретрите — люди.</em></p>
+</section>
+
+<!-- Блок 3. Что вас ждёт -->
+<section class="sec wrap" style="padding-top:0">
+  <h2 class="big">Что <span class="sw">в</span>ас ждёт</h2>
+  <p class="sub">Практики мягкие, опыт не нужен. Свободного времени у нас не меньше, чем программы.</p>
+  <div class="cards">
+    <article class="card"><div class="ph ph--mark"><img src="images/yoga.jpg" alt="Группа занимается йогой в зале с большими окнами" loading="lazy" style="object-position:center 62%"></div><h3>Две практики йоги</h3><p>Вечерняя практика инь-йоги, чтобы полностью расслабиться и отпустить напряжение дня. И мягкая утренняя практика, чтобы проснуться без спешки. Подходит для любого уровня.</p></article>
+    <article class="card"><div class="ph ph--mark"><img src="images/sound-healing.jpg" alt="Девушки лежат с повязками на глазах среди поющих чаш" loading="lazy" style="object-position:center 35%"></div><h3>Sound Healing</h3><p>Час глубокого расслабления под звуки поющих чаш. Вы просто лежите, слушаете и даёте нервной системе выдохнуть.</p></article>
+    <article class="card"><div class="ph ph--mark"><img src="images/next-chapter.jpg" alt="Девушка в белом на камнях у раскрытой книги" loading="lazy" style="object-position:center 68%"></div><h3>«Моя следующая глава»</h3><p>Медитация-визуализация и письменная практика. Наш мозг формирует привычные мысли и образ себя, а значит, меняться проще, когда ясно видишь, куда хочешь прийти.</p></article>
+    <article class="card"><div class="ph ph--mark"><img src="images/villa-bath.jpg" alt="Ванная комната виллы с каменной ванной и двумя раковинами" loading="lazy" style="object-position:center 55%"></div><h3>Вилла у реки только для нас</h3><p>Эстетичная вилла для вашего контента, бассейн, река. И никаких посторонних.</p></article>
+    <article class="card"><div class="ph ph--mark"><img src="images/food-plate.jpg" alt="Тарелка с зеленью, хумусом, кукурузой и авокадо" loading="lazy" style="object-position:center 85%"></div><h3>Веганское питание от Kurumi</h3><p>Полезный полноценный ужин и завтрак, а также фрукты, чай и лёгкие перекусы. Блюда вы выбираете заранее.</p></article>
+    <article class="card"><div class="ph ph--mark"><img src="images/talks-evening.jpg" alt="Девушки смеются и разговаривают, сидя на полу под пледами" loading="lazy" style="object-position:center 52%"></div><h3>Время для душевных разговоров</h3><p>Бассейн, веранда, долгие вечерние беседы. Никакого расписания на каждую минуту. Программа составлена так, чтобы у вас было свободное время для созерцания и новых тёплых знакомств.</p></article>
+  </div>
+</section>
+
+<!-- Блок 3а. Чего здесь не будет -->
+<section class="sec dark">
+  <div class="wrap">
+    <h2 class="big">Чего здесь не <span class="sw">б</span>удет</h2>
+    <ul class="nope">
+      <li><h3>Нетворкинга и «продажи себя»</h3><p>Никаких «чем занимаетесь?» по кругу, визиток и необходимости показывать себя с лучшей стороны.</p></li>
+      <li><h3>Расписания на каждую минуту</h3><p>Любую практику можно пропустить и просто полежать у бассейна.</p></li>
+      <li><h3>Обязательных откровений</h3><p>Делиться или молчать, решаете вы. К нам приходят и скромные ребята, так что активничать можно в меру своего комфорта.</p></li>
+      <li><h3>Большой шумной группы</h3><p>Количество мест ограничено до небольшой комфортной группы.</p></li>
+    </ul>
+    <p class="lead sum">А будет вилла у реки, мягкие практики и люди, с которыми легко.</p>
+  </div>
+</section>
+
+<!-- Блок 4. Программа -->
+<section class="sec wrap">
+  <h2 class="big">Программа <span class="sw">д</span>вух дней</h2>
+  <p class="sub">Без спешки, с балансом практик и свободного времени</p>
+  <div class="days">
+    <div class="day">
+      <h3>Суббота, 21 ноября</h3>
+      <ul>
+        <li><b>15:00–16:00</b><span>Заезд и заселение</span></li>
+        <li><b>16:00–17:00</b><span>Знакомство, бассейн, лёгкий перекус</span></li>
+        <li><b>17:00–18:00</b><span>Инь-йога</span></li>
+        <li><b>18:00–19:00</b><span>Sound Healing</span></li>
+        <li><b>19:00–20:00</b><span>Общий ужин</span></li>
+        <li><b>с 20:00</b><span>Свободное время: бассейн, отдых и общение</span></li>
+      </ul>
+    </div>
+    <div class="day">
+      <h3>Воскресенье, 22 ноября</h3>
+      <ul>
+        <li><b>07:50–08:30</b><span>Утренняя йога</span></li>
+        <li><b>08:30–09:10</b><span>Завтрак</span></li>
+        <li><b>09:10–10:00</b><span>Практика визуализации</span></li>
+        <li><b>10:00–11:00</b><span>Свободное время: бассейн, отдых и общение</span></li>
+        <li><b>11:00</b><span>Выезд с виллы</span></li>
+        <li><b>После выезда</b><span>Прогулка по Хойану по желанию</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Блок 5. Место и еда -->
+<section class="sec villa" style="padding-top:0">
+  <div class="wrap">
+    <h2 class="big" style="font-size:clamp(38px,6.4vw,92px)"><span class="sw">В</span>илла у реки и еда, которая о вас заботится</h2>
+  </div>
+  <div class="rail-box">
+    <div class="rail" id="rail" tabindex="0" aria-label="Фото виллы">
+      <div class="ph"><img src="images/namo-bath.jpg" alt="Ванная комната виллы с каменной ванной" loading="lazy" style="object-position:center 55%"></div>
+      <div class="ph"><img src="images/namo-pool.jpg" alt="Бассейн виллы среди пальм вечером" loading="lazy" style="object-position:center 60%"></div>
+      <div class="ph"><img src="images/namo-bedroom.jpg" alt="Спальня виллы с выходом к бассейну" loading="lazy" style="object-position:center 55%"></div>
+      <div class="ph"><img src="images/namo-kitchen.jpg" alt="Открытая кухня виллы с длинной столешницей" loading="lazy" style="object-position:center 55%"></div>
+    </div>
+    <button class="round round--prev" id="prev" aria-label="Предыдущее фото">←</button>
+    <button class="round round--next" id="next" aria-label="Следующее фото">→</button>
+  </div>
+  <div class="bar"><b id="num">1</b> / 4 <span><i id="fill"></i></span></div>
+
+  <div class="wrap two">
+    <div>
+      <h3>Вилла NAMO</h3>
+      <p>Тихая вилла на реке Ко Ко, в районе Хойана, где нет туристической суеты. Вилла целиком наша на два дня: никаких посторонних, и мы никому не мешаем.</p>
+    </div>
+    <div>
+      <ul class="ticks">
+        <li>Свой бассейн 21 м² между домом и рекой</li>
+        <li>Собственный деревянный причал на реке, каяки и лодка-корзина (по желанию)</li>
+        <li>Длинный стол на веранде и открытая кухня, где собираемся за ужином и разговорами</li>
+        <li>Четыре спальни, у каждой свой санузел и балкон; кондиционер в каждой комнате</li>
+        <li>Wi-Fi 200+ Мбит/с</li>
+        <li>Велосипеды: до пляжа Куадай 2,7 км, около 10 минут</li>
+      </ul>
+      <p class="way">Как добраться: до Старого города около 15 минут на машине, до аэропорта Дананга около 47 минут. Точный адрес и геолокацию отправим после брони.</p>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="two food">
+      <div class="ph"><img src="images/kurumi.jpg" alt="Багет с овощами, оливками и песто на деревянной доске" loading="lazy" style="object-position:center 30%"></div>
+      <div>
+        <h3>Еда от Kurumi</h3>
+        <p style="margin-bottom:20px">Kurumi — 100% веганский ресторан в Хойане и Дананге. Меню от боулов и панкейков до сытной домашней кухни, так что никто не останется голодным.</p>
+        <ul class="ticks">
+          <li>Ужин в субботу и завтрак в воскресенье</li>
+          <li>Фрукты, чай и лёгкие перекусы в течение двух дней</li>
+          <li>Блюда вы выбираете заранее в короткой форме: мы учтём пожелания и аллергии</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Блок 6. Кто мы и зачем это делаем -->
+<section class="hello">
+  <div class="ph hello__photo hello__photo--left">
+    <img src="images/aliya.jpg" alt="Алия на террасе с видом на горы" style="object-position:center 30%;transform:scale(1.6);transform-origin:58% 73%">
+    <p class="hand">Алия веб-дизайнер и вместе с Викой ведёт воркшопы.</p>
+  </div>
+  <div class="hello__text">
+    <h2 class="hello__title">Привет, мы Алия и Вика</h2>
+    <p>Мы познакомились в Далате: обе были в эмиграции и обе искали своих людей. Нашли друг друга и поняли, что хотим, чтобы так же друг друга находили и другие люди.</p>
+    <p>Мы проводим воркшопы в Дананге. Люди знакомятся, остаются на связи, и случайные встречи превращаются в дружбу. Одна из участниц как-то призналась, что два года в Дананге не ходила ни на какие мероприятия: боялась, что придёт, а там разговоры только о парнях и ни одного человека, с кем интересно. К нам приходят другие люди: деятельные, любопытные, с проектами и планами. Видимо, мы притягиваем именно таких.</p>
+  </div>
+  <div class="ph hello__photo hello__photo--right">
+    <img src="images/vika.jpg" alt="Вика, чёрно-белый портрет" style="object-position:41% center;transform:scale(1.15);transform-origin:41% 100%">
+    <p class="hand">Вика проводит воркшопы, занимается йогой и серфингом.</p>
+  </div>
+  <p class="hello__next">Ретрит — наш следующий шаг: два дня, чтобы познакомиться и провести время вместе без спешки. Наша цель простая: собирать классных людей в одном месте, чтобы никому больше не приходилось искать своих в одиночку.</p>
+</section>
+<section class="wrap">
+  <div class="reviews">
+    <div class="ph"><img src="images/workshop-3.jpg" alt="Пять участниц воркшопа с украшениями, которые они сделали" loading="lazy"></div>
+    <div class="ph"><img src="images/workshop-1.jpg" alt="Девушка в жёлтом платье собирает украшение на воркшопе" loading="lazy"></div>
+    <div class="ph"><img src="images/workshop-2.jpg" alt="Девушка за столом нанизывает бусины на воркшопе" loading="lazy"></div>
+  </div>
+</section>
+
+<!-- Блок 7. Стоимость и условия -->
+<section class="sec wrap">
+  <h2 class="big"><span class="sw">С</span>тоимость и что <span class="sw">в</span>ходит</h2>
+  <div class="prices">
+    <div class="price"><p>Еду один(а)</p><strong>3 900 000 ₫</strong></div>
+    <div class="price"><p>Приезжаем вдвоём (+1: с другом, подругой или партнёром)</p><strong>3 700 000 ₫</strong><p>с человека</p></div>
+  </div>
+  <ul class="ovals ovals--terms">
+    <li><div class="oval"><h3>Входит в стоимость</h3><ul class="oval__list">
+      <li>Проживание на вилле: одна ночь, комнаты с собственным санузлом</li>
+      <li>Две практики йоги: вечерняя инь-йога и утренняя йога</li>
+      <li>Sound Healing</li>
+      <li>Медитация-визуализация и практика «Моя следующая глава»</li>
+      <li>Ужин в субботу и завтрак в воскресенье от Kurumi</li>
+      <li>Фрукты, чай, вода и лёгкие перекусы</li>
+      <li>Бассейн, каяки и велосипеды виллы</li>
+    </ul></div></li>
+    <li><div class="oval"><h3>Не входит</h3><ul class="oval__list">
+      <li>Дорога до виллы и обратно (такси или Grab)</li>
+      <li>Обед в воскресенье после выезда</li>
+      <li>Личные расходы</li>
+      <li>По желанию: прогулка по Хойану после ретрита</li>
+    </ul></div></li>
+    <li><div class="oval"><h3>Как бронируем</h3><ol class="oval__list oval__list--steps">
+      <li>Напишите нам, мы пришлём короткую анкету</li>
+      <li>Предоплата 50% закрепляет место, остаток до 14 ноября</li>
+      <li>Если не сможете приехать, предоплата не возвращается, но вы можете передать место другу или подруге</li>
+    </ol></div></li>
+  </ul>
+  <div class="center"><a class="btn" href="https://wa.me/79143753500?text=%D0%A5%D0%BE%D1%87%D1%83%20%D0%BD%D0%B0%20%D1%80%D0%B5%D1%82%D1%80%D0%B8%D1%82%F0%9F%A4%8D%F0%9F%90%9A%F0%9F%A7%89" target="_blank" rel="noopener">Хочу присоединиться <i></i></a></div>
+</section>
+
+<!-- Блок 8. Вопросы и ответы -->
+<section class="sec wrap" style="padding-top:0">
+  <h2 class="big" style="font-size:clamp(40px,6.6vw,96px)"><span class="sw">В</span>опросы и ответы</h2>
+  <div class="faq">
+    <details open><summary>Я поеду один(а) и никого не знаю. Это нормально?</summary><p>Да, так приезжает большинство. Группа маленькая, а программа устроена так, чтобы знакомиться без неловкости: вместе едим, занимаемся и разговариваем. Многие участники наших воркшопов уже подружились.</p></details>
+    <details><summary>Я никогда не занимался(ась) йогой. Мне подойдёт?</summary><p>Да. Обе практики мягкие и подходят для любого уровня. Опыт не нужен, а если что-то не получается, можно просто отдохнуть.</p></details>
+    <details><summary>Что за люди будут на ретрите?</summary><p>Мы собираем группу небольшую и внимательную: сначала знакомимся в переписке и просим заполнить короткую анкету. Это не экзамен, нам просто важно, чтобы вам с группой было хорошо.</p></details>
+    <details><summary>Как добраться до виллы?</summary><p>Вилла находится в районе Casamia, в нескольких минутах от пляжа Куадай и около 15 минут на машине от Старого города Хойана. От аэропорта Дананга ехать около 47 минут. Адрес отправим после брони, а в чате группы можно договориться ехать вместе.</p></details>
+    <details><summary>Что взять с собой?</summary><p>Купальник, удобную одежду для йоги, лёгкую кофту на вечер, средство от комаров (рядом река), паспорт для регистрации на вилле и всё, что нужно лично вам.</p></details>
+    <details><summary>Я веган(ка) или у меня аллергия. Что с едой?</summary><p>Kurumi — полностью веганский ресторан, так что вегетарианцам и веганам здесь проще всего. Блюда вы выбираете заранее в форме, туда же пишете про аллергии и непереносимости.</p></details>
+    <details><summary>А если будет дождь?</summary><p>Ноябрь в Хойане может быть дождливым, поэтому практики проходят под крышей. Если планы изменятся, мы предупредим заранее.</p></details>
+    <details><summary>А если я не смогу приехать?</summary><p>Предоплата не возвращается, потому что мы заранее бронируем виллу и еду. Но вы можете передать место другу или подруге.</p></details>
+    <details><summary>Как забронировать?</summary><p>Напишите нам в Telegram или WhatsApp. Мы пришлём короткую анкету, расскажем детали и забронируем место после предоплаты.</p></details>
+  </div>
+</section>
+
+<!-- Блок 9. Финал -->
+<section class="sec dark final" id="contacts">
+  <div class="wrap">
+    <h2 class="big"><span class="sw">В</span>аши люди уже собираются</h2>
+    <p>Если вы дочитали до этого места, возможно, вам это правда нужно. Напишите нам, и мы пришлём короткую анкету. Это не экзамен: нам просто интересно узнать вас и сложить группу так, чтобы всем было хорошо. Отвечаем лично и честно, подходит ли вам этот формат.</p>
+    <div class="final__btns">
+      <a class="btn btn--light" href="https://wa.me/79143753500?text=%D0%A5%D0%BE%D1%87%D1%83%20%D0%BD%D0%B0%20%D1%80%D0%B5%D1%82%D1%80%D0%B8%D1%82%F0%9F%A4%8D%F0%9F%90%9A%F0%9F%A7%89" target="_blank" rel="noopener">Хочу присоединиться <i></i></a>
+      <a class="btn btn--ghost" href="https://wa.me/79143753500?text=%D0%A5%D0%BE%D1%87%D1%83%20%D0%BD%D0%B0%20%D1%80%D0%B5%D1%82%D1%80%D0%B8%D1%82%F0%9F%A4%8D%F0%9F%90%9A%F0%9F%A7%89" target="_blank" rel="noopener">Задать вопрос <i></i></a>
+    </div>
+    <div class="contacts">
+      <h3>Контакты:</h3>
+      <div class="contacts__cols">
+        <ul>
+          <li><a href="https://t.me/Aliya_Minikaeva" target="_blank" rel="noopener">Telegram, Алия</a></li>
+          <li><a href="https://wa.me/79143753500?text=%D0%A5%D0%BE%D1%87%D1%83%20%D0%BD%D0%B0%20%D1%80%D0%B5%D1%82%D1%80%D0%B8%D1%82%F0%9F%A4%8D%F0%9F%90%9A%F0%9F%A7%89" target="_blank" rel="noopener">WhatsApp, Алия</a></li>
+        </ul>
+        <ul>
+          <li><a href="https://t.me/vktrdbrnn" target="_blank" rel="noopener">Telegram, Виктория</a></li>
+          <li><a href="https://wa.me/79642211855?text=%D0%A5%D0%BE%D1%87%D1%83%20%D0%BD%D0%B0%20%D1%80%D0%B5%D1%82%D1%80%D0%B8%D1%82%F0%9F%A4%8D%F0%9F%90%9A%F0%9F%A7%89" target="_blank" rel="noopener">WhatsApp, Виктория</a></li>
+        </ul>
+      </div>
+      <a class="contacts__insta" href="https://www.instagram.com/dn.art_brunch?rpxt=MTN6cjU0Yjkwa2E2Yg==" target="_blank" rel="noopener">Instagram</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<script>
+  const rail = document.getElementById('rail');
+  const slides = [...rail.children];
+  const nearest = () => {
+    const mid = rail.scrollLeft + rail.clientWidth / 2;
+    return slides.reduce((best, s, i) =>
+      Math.abs(s.offsetLeft + s.offsetWidth / 2 - mid) <
+      Math.abs(slides[best].offsetLeft + slides[best].offsetWidth / 2 - mid) ? i : best, 0);
+  };
+  const go = (i) => {
+    const s = slides[(i + slides.length) % slides.length];
+    rail.scrollTo({ left: s.offsetLeft - (rail.clientWidth - s.offsetWidth) / 2, behavior: 'smooth' });
+  };
+  rail.addEventListener('scroll', () => {
+    const i = nearest();
+    document.getElementById('num').textContent = i + 1;
+    document.getElementById('fill').style.left = i * 25 + '%';
+  }, { passive: true });
+  document.getElementById('prev').onclick = () => go(nearest() - 1);
+  document.getElementById('next').onclick = () => go(nearest() + 1);
+</script>
+</body>
+</html>

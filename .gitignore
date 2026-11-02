@@ -1,0 +1,5 @@
+# Tudo fica de fora, exceto o site publicado
+/*
+!/index.html
+!/images/
+!/.gitignore
